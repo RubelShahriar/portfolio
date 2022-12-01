@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <title>Rubel Shahriar</title>
+    <link rel="stylesheet" href="./boxicons-2.1.4/css/boxicons.min.css" />
+    <link rel="stylesheet" href="./portfolio.css" />
+  </head>
+  <body>
+    <div class="cursor-main">
+      <div class="cursor-main-small"></div>
+      <div class="cursor-main-big"></div>
+    </div>
+    <div class="overlay"></div>
+    <header class="theme-header">
+      <div class="theme">
+        <i class="bx bx-moon theme-icon"></i>
+      </div>
+    </header>
+    <div class="navbar">
+      <div class="nav-item-wrapper">
+        <ul class="nav-unorder-list">
+          <a href="">
+            <li class="active">
+              <h2>Home</h2>
+              <i class="bx bxs-home"></i>
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <h2>about</h2>
+              <i class="bx bxs-user"></i>
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <h2>portfolio</h2>
+              <i class="bx bxs-briefcase"></i>
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <h2>contact</h2>
+              <i class="bx bxs-envelope-open"></i>
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <h2>blog</h2>
+              <i class="bx bxs-conversation"></i>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <section class="modal hidden">
+      <i class="bx bx-x-circle modal-close"></i>
+      <h2 class="modal-h2">youtube project</h2>
+      <div class="modal-grid">
+        <div class="modal-left">
+          <p><i class="bx bxl-nodejs"></i>project: <span>video</span></p>
+          <p>
+            <i class="bx bx-code-alt"></i>language: <span>html css js</span>
+          </p>
+        </div>
+        <div class="modal-right">
+          <p><i class="bx bx-user"></i>client: <span>videohive</span></p>
+          <p>
+            <i class="bx bx-link-external"></i>preview:
+            <a href="">project.netlify.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="modal-images">
+        <img src="./images/tunis.jpg" alt="project" />
+      </div>
+    </section>
+    <div class="modal-overlay hidden"></div>
+    <main class="portfolio">
+      <div class="container">
+        <div class="cmn-heading">
+          <h1 class="title">
+            my <span class="heading-last-word">portfolio</span>
+          </h1>
+          <span class="title-bg">works</span>
+        </div>
+        <h3 class="portfolio-heading3">my recent works</h3>
+        <div class="portfolio-grid">
+          <div class="portfolio-grid-item" onclick="openModal()">
+            <img
+              class="portfolio-grid-item-image"
+              src="./images/tunis.jpg"
+              alt=""
+            />
+            <h3 class="portfolio-image-heading3">mockup project</h3>
+          </div>
+          <div class="portfolio-grid-item" onclick="openModal()">
+            <img
+              class="portfolio-grid-item-image"
+              src="./images/tunis.jpg"
+              alt=""
+            />
+            <h3 class="portfolio-image-heading3">mockup project</h3>
+          </div>
+          <div class="portfolio-grid-item" onclick="openModal()">
+            <img
+              class="portfolio-grid-item-image"
+              src="./images/tunis.jpg"
+              alt=""
+            />
+            <h3 class="portfolio-image-heading3">mockup project</h3>
+          </div>
+          <div class="portfolio-grid-item" onclick="openModal()">
+            <img
+              class="portfolio-grid-item-image"
+              src="./images/tunis.jpg"
+              alt=""
+            />
+            <h3 class="portfolio-image-heading3">mockup project</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./portfolio.js"></script onclick="openModal()">
+  </body>
+</html>
