@@ -189,6 +189,7 @@ a {
 .blog-thumb {
   overflow: hidden;
   border-bottom: 5px solid var(--main-color);
+  border-radius: 5px 5px 0 0;
 }
 .blog-item img {
   width: 100%;
