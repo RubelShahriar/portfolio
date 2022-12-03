@@ -3,10 +3,15 @@ const cursorRounded = document.querySelector(".cursor-main-big");
 const themeDiv = document.querySelector(".theme");
 const themeIcon = document.querySelector(".theme-icon");
 const overlay = document.querySelector(".overlay");
-// portfolio modal selection
-const modal = document.querySelector(".modal");
+// modal selection
 const closeModal = document.querySelector(".modal-close");
 const modalOverlay = document.querySelector(".modal-overlay");
+const carModal = document.querySelector(".modal-carshop");
+const galleryModal = document.querySelector(".modal-gallery");
+const dashboardModal = document.querySelector(".modal-dashboard");
+const youtubeModal = document.querySelector(".modal-youtube");
+const gadgetsModal = document.querySelector(".modal-gadgetspro");
+const foodModal = document.querySelector(".modal-foodapp");
 
 // overlay function
 window.addEventListener("load", function () {
@@ -36,17 +41,23 @@ themeDiv.addEventListener("click", function (e) {
 });
 
 // modal functions
-function openModal() {
-  modal.classList.remove("hidden");
-  modalOverlay.classList.remove("hidden");
-}
-
-closeModal.addEventListener("click", function () {
-  modal.classList.add("hidden");
-  modalOverlay.classList.add("hidden");
-});
+// modal's close btn now its display hidden
+// closeModal.addEventListener("click", function () {
+//   modalCarshop.classList.add("hidden");
+//   modalOverlay.classList.add("hidden");
+// });
 
 modalOverlay.addEventListener("click", function () {
-  modal.classList.add("hidden");
   modalOverlay.classList.add("hidden");
+  carModal.classList.add("hidden");
+  galleryModal.classList.add("hidden");
+  dashboardModal.classList.add("hidden");
+  youtubeModal.classList.add("hidden");
+  gadgetsModal.classList.add("hidden");
+  foodModal.classList.add("hidden");
 });
+
+function openModal(name) {
+  name.classList.remove("hidden");
+  modalOverlay.classList.remove("hidden");
+}

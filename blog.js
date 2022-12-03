@@ -4,11 +4,13 @@ const themeDiv = document.querySelector(".theme");
 const themeIcon = document.querySelector(".theme-icon");
 const overlay = document.querySelector(".overlay");
 // portfolio modal selection
-const modal = document.querySelector(".modal");
-const blog1 = document.querySelector(".blog-item");
-const blog2 = document.querySelector(".blog1");
 const closeModal = document.querySelector(".modal-close");
 const modalOverlay = document.querySelector(".modal-overlay");
+const redux = document.querySelector(".redux");
+const asynchornous = document.querySelector(".asynchornous");
+const roadmap = document.querySelector(".roadmap");
+const promises = document.querySelector(".promises");
+const errorHandling = document.querySelector(".error-handling");
 
 // overlay function
 window.addEventListener("load", function () {
@@ -36,17 +38,16 @@ themeDiv.addEventListener("click", function (e) {
   }
 });
 
-function openModal() {
-  modal.classList.remove("hidden");
+modalOverlay.addEventListener("click", function () {
+  modalOverlay.classList.add("hidden");
+  redux.classList.add("hidden");
+  asynchornous.classList.add("hidden");
+  roadmap.classList.add("hidden");
+  promises.classList.add("hidden");
+  errorHandling.classList.add("hidden");
+});
+
+function openModal(name) {
+  name.classList.remove("hidden");
   modalOverlay.classList.remove("hidden");
 }
-
-closeModal.addEventListener("click", function () {
-  modal.classList.add("hidden");
-  modalOverlay.classList.add("hidden");
-});
-
-modalOverlay.addEventListener("click", function () {
-  modal.classList.add("hidden");
-  modalOverlay.classList.add("hidden");
-});

@@ -180,7 +180,7 @@ a {
 .blog-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 30px;
 }
 .blog-item {
   border-radius: 5px;
@@ -193,7 +193,7 @@ a {
 }
 .blog-item img {
   width: 100%;
-  height: auto;
+  height: 230px;
   border-radius: 5px 5px 0 0;
   vertical-align: middle;
   transition: 0.3s;
@@ -219,47 +219,73 @@ a {
 }
 .blog-item:hover .blog-h3 {
   color: var(--main-color);
-}
-/* modal css */
+} /* modal css */
 .modal {
-  width: 600px;
-  height: 500px;
-  padding: 30px;
+  width: 650px;
+  height: 550px;
+  padding: 0 30px;
   border-radius: 20px;
   background-color: var(--bg-white);
   z-index: 10000;
-  position: relative;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow: hidden;
+  overflow-y: auto;
 }
 .modal-close {
   cursor: pointer;
-  font-size: 50px;
-  color: var(--bg-white);
+  font-size: 30px;
+  color: var(--text-color);
   position: absolute;
-  top: -20px;
-  right: -60px;
+  top: 10px;
+  right: 0px;
+  z-index: 99;
+  display: none;
 }
 .modal-h2 {
   color: var(--main-color);
   font-size: 33px;
   font-weight: 700;
   margin: 0;
+  padding: 30px 0 15px 0;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
-  position: sticky;
-  top: -30px;
-  left: 0;
-  background-color: var(--bg-white);
+}
+.modal-h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 15px 0 25px;
+  line-height: 1.2;
+}
+.modal-small-heading {
+  font-size: 13px;
+  color: #888;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.modal-small-heading span {
+  margin-right: 13px;
+  text-transform: capitalize;
+}
+.modal-small-heading i {
+  margin-right: 5px;
+  font-size: 16px;
+  margin-bottom: -4px;
+  color: var(--main-color);
+}
+.modal-details-text p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 .modal-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .modal-grid p {
   font-family: "Open Sans", sans-serif;
@@ -282,15 +308,19 @@ a {
   text-decoration: underline;
 }
 .modal-grid p span {
-  font-weight: 500;
+  font-weight: 600;
 }
 .modal-images {
   margin-top: 30px;
 }
 .modal-images img {
   width: 100%;
-  height: 320px;
-  border-radius: 15px;
+  height: 360px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+.modal-images:last-child {
+  margin-bottom: 0 !important;
 }
 .modal-overlay {
   position: fixed;
