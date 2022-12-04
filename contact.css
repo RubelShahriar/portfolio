@@ -280,6 +280,9 @@ a {
 .contact-icons {
   margin-top: 30px;
 }
+.contact-icons a {
+  color: var(--text-color);
+}
 .contact-icons i {
   font-size: 30px;
   background-color: var(--bg-light);
