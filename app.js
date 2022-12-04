@@ -4,6 +4,10 @@ const themeDiv = document.querySelector(".theme");
 const themeIcon = document.querySelector(".theme-icon");
 const overlay = document.querySelector(".overlay");
 
+function toggleTheme() {
+  document.querySelector("body").classList.toggle("dark-theme");
+}
+
 // overlay function
 window.addEventListener("load", function () {
   overlay.classList.add("overlay-height");

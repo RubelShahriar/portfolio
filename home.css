@@ -5,6 +5,11 @@
   --text-color: #666;
   --bg-light: #eee;
 }
+.dark-theme {
+  --bg-white: #212121;
+  --text-color: #fafafa;
+  --bg-light: #666;
+}
 * {
   margin: 0;
 }

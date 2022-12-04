@@ -3,6 +3,11 @@ const cursorRounded = document.querySelector(".cursor-main-big");
 const themeDiv = document.querySelector(".theme");
 const themeIcon = document.querySelector(".theme-icon");
 const overlay = document.querySelector(".overlay");
+
+function toggleTheme() {
+  document.querySelector("body").classList.toggle("dark-theme");
+}
+
 // portfolio modal selection
 const closeModal = document.querySelector(".modal-close");
 const modalOverlay = document.querySelector(".modal-overlay");

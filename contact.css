@@ -8,6 +8,10 @@
   --bg-light: #eee;
   --credits-border: #ddd;
 }
+.dark-theme {
+  --bd-white: #212121;
+  --text-color: #fafafa;
+}
 * {
   margin: 0;
 }

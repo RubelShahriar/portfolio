@@ -7,6 +7,10 @@
   --bg-light: #eee;
   --credits-border: #ddd;
 }
+.dark-theme {
+  --bg-white: #212121;
+  --text-color: #fafafa;
+}
 * {
   margin: 0;
 }
